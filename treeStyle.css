@@ -1,0 +1,80 @@
+body {
+    background: black;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(65, 238, 120);
+}
+
+/* Estilos del arbol de navidad */
+
+.star {
+    font-size: 100px;
+    animation: colores 1s infinite;
+}
+
+.rojo {
+    color: red;
+    transition: all 1.5s;
+    font-size: 30px;
+}
+
+@keyframes colores {
+    0% {
+        color: red;
+    }
+
+    15% {
+        color: blue;
+    }
+
+    33% {
+        color: green;
+    }
+
+    66% {
+        color: red;
+    }
+
+    100% {
+        color: yellow;
+    }
+}
+
+/* Estilos de los copos de nieve */
+
+.snowflake {
+    position: fixed;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    from { top: -10px; }
+    to { top: 100%; }
+}
+
+/* Estilos de los hombres de nieve */
+
+.snowman {
+    position: fixed;
+    font-size: 9.375em; /* 150px */
+}
+
+.left {
+    top: 30%;
+    left: 5%;
+}
+
+.right {
+    top: 30%;
+    right: 5%;
+}
+
+@media (max-width: 600px) {
+    .snowman {
+        font-size: 4.6875em; /* 75px */
+    }
+}
